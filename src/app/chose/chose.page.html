@@ -1,0 +1,32 @@
+<app-background>
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button class="button" (click)="accessHome()">
+          <ion-icon slot="icon-only" name="home"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>TechSênior</ion-title>
+      <ion-buttons slot="end">
+        <ion-button class="button" (click)="abrirAlerta()">
+          <ion-icon slot="icon-only" name="help-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <h1 class="centered-text1">Antes de Tudo</h1>
+    <h4 class="centered-text2">Com qual destes aparelhos celulares o seu se parece?</h4>
+    <div class="img-container">
+      <div class="image-wrapper">
+        <img src="assets/imgs/iPhone.jpeg" class="image-item" (click)="accessAndroid()">
+        <ion-button class="centered-buttonP" (click)="accessAndroid()">iPhone</ion-button>
+      </div>
+      <div class="image-wrapper">
+        <img src="assets/imgs/Samsung.jpeg" class="image-item" (click)="accessAndroid()">
+        <ion-button class="centered-buttonS" (click)="accessAndroid()">Samsung</ion-button>
+      </div>
+    </div>
+  </ion-content>
+</app-background>

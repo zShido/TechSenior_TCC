@@ -1,0 +1,42 @@
+<app-background>
+  <ion-header>
+    <ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-button class="button" (click)="accessChose()">
+      <ion-icon name="arrow-undo-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-title>TechSênior</ion-title>
+  <ion-buttons slot="end">
+    <ion-button class="button">
+      <ion-icon name="menu"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+</ion-header>
+  <h1 class="centered-text1">O que vamos aprender hoje?</h1>
+  <h4 class="centered-text2">Toque na opção desejada!</h4>
+  <div class="options-container">
+    <div class="option-card red" (click)="accessGaleria()">
+      <div class="icon-title">
+        <ion-icon name="flower-outline"></ion-icon>
+        <h3>Galeria</h3>
+      </div>
+      <p>Registrou algum momento legal? Vamos aprender como organizar e gerenciar suas fotos.</p>
+    </div>
+    <div class="option-card blue" (click)="accessCalendario()">
+      <div class="icon-title">
+        <ion-icon name="calendar-outline"></ion-icon>
+        <h3>Calendário</h3>
+      </div>
+      <p>Esquecendo de alguma data importante? Vamos aprender a se planejar!</p>
+    </div>
+    <div class="option-card purple" (click)="accessRelogio()">
+      <div class="icon-title">
+        <ion-icon name="alarm-outline"></ion-icon>
+        <h3>Relógio</h3>
+      </div>
+      <p>Acordou tarde e perdeu algum compromisso? Vamos criar e gerenciar seus alarmes!</p>
+    </div>
+  </div>
+</app-background>

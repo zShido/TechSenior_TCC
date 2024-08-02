@@ -1,0 +1,101 @@
+<ion-content class="backgroundC">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button class="button" (click)="accessMenu()">
+          <ion-icon name="arrow-undo-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>Relógio</ion-title>
+      <ion-buttons slot="end">
+        <ion-button class="button" (click)="alertaInfo()">
+          <ion-icon slot="icon-only" name="help-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <h1 class="centered-text">O que podemos fazer aqui?</h1>
+
+  <div class="button-group">
+    <ion-button class="menu-button white-button" (click)="accessAlarme()">Alarmes</ion-button>
+    <ion-button class="menu-button white-button" (click)="accessMundi()">Relógio Mundial</ion-button>
+    <ion-button class="menu-button white-button" (click)="alertaPaginaAtual()">Crônometro</ion-button>
+    <ion-button class="menu-button white-button" (click)="accessTemporizador()">Temporizador</ion-button>
+  </div>
+
+  <div class="menu-section">
+    <h2 class="menu-title">Sumário Cronômetro</h2>
+    <p class="menu-description">
+      Nesta página serão abordados os seguintes tópicos: <br></p>
+    <p class="sumary">
+      1. Cronômetro<br>
+      2 Iniciar<br>
+      3 Volta<br>
+      4 Parar<br>
+      5 Retomar<br>
+      6 Restaurar<br>
+    </p>
+  </div>
+
+  <div class="menu-section">
+    <h2 class="menu-title">1 - Cronômetro</h2>
+    <p class="menu-description">
+      Entrando no menu do cronômetro, você visualizara um contador no centro de sua tela (A) e dois botões principais,
+      "Iniciar"(B) e "Volta"(C).
+    </p>
+    <img src="/assets/relogio/Cronometro_Menu.jpg" alt="Imagens" class="menu-image">
+
+    <p class="menu-subtitle">
+      2. Iniciar
+    </p>
+    <p class="menu-description">
+      Após pressionar o botão "Iniciar" o contador do centro da tela irá iniciar e começar a contar o tempo.
+    </p>
+    <img src="/assets/relogio/Cronometro_Iniciado.jpg" alt="Imagens" class="menu-image">
+
+    <p class="menu-subtitle">
+      3. Volta
+    </p>
+    <p class="menu-description">
+      Pressionando o botão "Volta" após o contador ser iniciado, ele marcará o momento em que você cliclou no botão e o
+      número da volta, assim como mostra a imagem a seguir:
+    </p>
+    <img src="/assets/relogio/Volta_Cronometro.jpg" alt="Imagens" class="menu-image">
+
+    <p class="menu-subtitle">
+      4. Parar
+    </p>
+    <p class="menu-description">
+      Clicando no botão "Parar", você interrompe o contador, parando no momento em que o botão foi pressionado.<br>
+    </p>
+    <img src="/assets/relogio/Parar_Cronometro.jpg" alt="Imagens" class="menu-image">
+
+    <p class="menu-subtitle">
+      5. Retomar
+    </p>
+    <p class="menu-description">
+      Após parar o cronômetro, se desejar continuar o contador a partir da pausa, basta clicar no botão "Retomar".
+    </p>
+    <img src="/assets/relogio/Retomar_Cronometro.jpg" alt="Imagens" class="menu-image">
+
+    <p class="menu-subtitle">
+      6. Restaurar
+    </p>
+    <p class="menu-description">
+      Após parar o cronômetro, se desejar reiniciar o contador, basta clicar no botão "Restaurar".
+    </p>
+    <img src="/assets/relogio/Restaurar_Cronometro.jpg" alt="Imagens" class="menu-image">
+
+  </div>
+
+  <div class="bottom-button">
+    <ion-button class="next-button" (click)="accessMundi()">Relógio Mundial
+      <ion-icon slot="start" name="arrow-back-outline"></ion-icon>
+    </ion-button>
+    <ion-button class="next-button" (click)="accessTemporizador()">Temporizador
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+</ion-content>
